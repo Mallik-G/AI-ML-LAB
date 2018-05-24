@@ -17,6 +17,3 @@ Invoke-WebRequest "https://aka.ms/azureml-wb-msi" -OutFile $Path\$Installer
 Write-Host "Installing Azure CLI from $Path\$Installer..." -ForegroundColor Green
 Start-Process -FilePath msiexec -Args "/i $Path\$Installer /quiet /qn /norestart" -Verb RunAs -Wait
 Remove-Item $Path\$Installer
-
-#Reboot
-Restart-Computer
