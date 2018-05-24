@@ -14,6 +14,5 @@ ForEach ($PackageName in $Packages)
 $Path = $env:TEMP; 
 $Installer = "AmlWorkbenchSetup.msi"
 Invoke-WebRequest "https://aka.ms/azureml-wb-msi" -OutFile $Path\$Installer
-Write-Host "Installing Azure CLI from $Path\$Installer..." -ForegroundColor Green
-Start-Process -FilePath msiexec -Args "/i $Path\$Installer /quiet /qn /norestart" -Verb RunAs -Wait
+Start-Process -FilePath msiexec -Args "/i $Path\$Installer /quiet /qn /norestart /l C:\Logs\AMLinstall.txt" -Verb RunAs -Wait
 Remove-Item $Path\$Installer
