@@ -13,7 +13,6 @@ ForEach ($PackageName in $Packages)
 # Install Azure ML Workbench
 $Path = $env:TEMP; 
 $Installer = "AmlWorkbenchSetup.msi"
-Write-Host "Downloading Azure CLI..." -ForegroundColor Green
 Invoke-WebRequest "https://aka.ms/azureml-wb-msi" -OutFile $Path\$Installer
 Write-Host "Installing Azure CLI from $Path\$Installer..." -ForegroundColor Green
 Start-Process -FilePath msiexec -Args "/i $Path\$Installer /quiet /qn /norestart" -Verb RunAs -Wait
