@@ -26,7 +26,7 @@
     "LABVM-PUBIPName": "[concat(variables('LABVMName'), '-PIP')]",
     "LABVMInstallHyperVScriptFolder": ".",
     "LABVMInstallHyperVScriptFileName": "InstallLABVM.ps1",
-    "LABVMInstallHyperVURL": "https://raw.githubusercontent.com/deltadan/LABVM/master/InstallLABVM.ps1"
+    "LABVMInstallHyperVURL": "https://raw.githubusercontent.com/deltadan/AI-ML-LAB/master/InstallLABVM.ps1"
   },
   "resources": [
     {
