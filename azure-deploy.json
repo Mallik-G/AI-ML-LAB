@@ -14,7 +14,7 @@
     "LABVMVNETSubnet1Prefix": "192.168.0.0/24",
     "LABVMName": "LABVM",
     "LABVMAdminUserName": "demouser",
-    "LABVMAdminPassword": "Password.1!!",
+    "LABVMAdminPassword": "Abc!1234567890",
     "LABVMImagePublisher": "MicrosoftWindowsServer",
     "LABVMImageOffer": "WindowsServer",
     "LABVMWindowsOSVersion": "2016-Datacenter",
